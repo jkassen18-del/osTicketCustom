@@ -1,0 +1,19 @@
+#
+# This is popup help messages for the Admin Panel -> Agents -> Access
+#
+---
+access:
+    title: Department Access
+    content: >
+        Each agent belongs to one <span class="doc-desc-title">primary
+        department</span> (set on the agent profile) and can be granted
+        <span class="doc-desc-title">extended access</span> to other
+        departments. The <span class="doc-desc-title">role</span> chosen
+        for each department decides what the agent may do there
+        (reply, assign, close, delete…). Alerts controls whether the agent
+        receives email alerts for that department.
+    links:
+      - title: Manage roles
+        href: /scp/roles.php
+      - title: Manage departments
+        href: /scp/departments.php

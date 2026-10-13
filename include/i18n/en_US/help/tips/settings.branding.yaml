@@ -1,0 +1,18 @@
+#
+# This is popup help messages for the Admin Panel -> Settings -> Branding
+#
+---
+accent:
+    title: Accent colour
+    content: >
+        The single brand colour used across the interface: active
+        navigation, primary buttons, links, focus rings and chart
+        highlights. All other colours are neutral greys so the interface
+        stays calm and the accent stands out.
+
+theme:
+    title: Colour scheme
+    content: >
+        Light and dark schemes share the same layout and accent.
+        <span class="doc-desc-opt">Follow system</span> uses the
+        operating system preference of each agent.

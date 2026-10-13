@@ -1,0 +1,18 @@
+#
+# This is popup help messages for the Admin Panel -> Settings -> Monitoring
+#
+---
+monitoring:
+    title: Monitoring and incidents
+    content: >
+        Send a JSON event with <code>source</code>, <code>title</code>,
+        <code>severity</code> (info, warning, error, critical) and an
+        optional <code>key</code> to de-duplicate repeated reports. Add
+        <code>"status": "resolved"</code> when the system recovers. The
+        optional <code>department</code> field routes the incident (and
+        its ticket and channel alerts) to a specific department.
+    links:
+      - title: Monitoring API reference
+        href: /docs/MONITORING-API.md
+      - title: API keys
+        href: /scp/apikeys.php

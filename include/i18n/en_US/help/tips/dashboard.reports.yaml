@@ -1,0 +1,32 @@
+#
+# This is popup help messages for the Staff Panel -> Dashboard -> Reports
+#
+# Fields:
+# title - Shown in bold at the top of the popover window
+# content - The body of the help popover
+# links - List of links shows below the content
+#   title - Link title
+#   href - href of link (links starting with / are translated to the
+#       helpdesk installation path)
+#
+# The key names such as 'helpdesk_name' should not be translated as they
+# must match the HTML #ids put into the page template.
+#
+---
+reports:
+    title: Reports
+    content: >
+        Build a report by picking a metric (what to count or measure), how to
+        group it over time, and an optional split (department, agent, help
+        topic, priority, source, status or SLA plan). Narrow the data with
+        the date range, department and agent filters, pick a chart style and
+        press <span class="doc-desc-title">Run</span>. Reports can be saved
+        with a name for one-click access later and exported as CSV.
+
+metric:
+    title: Metric
+    content: >
+        Counts are summed per period. Response and service times are
+        averages in hours. SLA compliance is the percentage of tickets
+        created in each period that met their due date. The backlog metric
+        ignores the date range and shows open tickets right now.

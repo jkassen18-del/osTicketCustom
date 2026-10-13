@@ -1,0 +1,19 @@
+#
+# This is popup help messages for the Staff Panel -> Dashboard -> Incidents
+#
+---
+incidents:
+    title: Incidents
+    content: >
+        Incidents are reported by monitoring tools, applications and
+        scripts through the monitoring API. Repeated reports with the
+        same system and key are folded into one incident, a ticket is
+        opened in the mapped department and the department's connected
+        channels (Linear, Teams, webhooks) receive the details. A
+        "resolved" report closes the incident and, if configured, the
+        ticket.
+    links:
+      - title: Monitoring API reference
+        href: /docs/MONITORING-API.md
+      - title: Monitoring settings
+        href: /scp/settings.php?t=incidents
