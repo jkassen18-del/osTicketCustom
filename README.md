@@ -20,9 +20,9 @@ What is different
 ### Modern interface
   * One neutral design system (`scp/css/modern.css`): a single accent colour,
     glyph icons instead of coloured icon sets, consistent cards, tables,
-    forms and dialogs, a slim app bar with an agent menu, and a dark theme
+    forms and dialogues, a slim app bar with an agent menu, and a dark theme
     with a one-click toggle (auto follows the OS preference).
-  * Comfortable / compact density, remembered per agent.
+  * Comfortable/compact density, remembered per agent.
   * Ticket list: monochrome source glyphs, SLA due decorations, density
     toggle, cleaner bulk actions.
   * Ticket thread: avatars with initials, entry kind badges (message, reply,
@@ -32,13 +32,13 @@ What is different
 ![Ticket list](docs/screenshots/ticket-list.png)
 
 ### Branding (Admin Panel → Settings → Branding)
-  * Accent colour, light / dark / auto theme, density, navigation style.
+  * Accent colour, light/dark/auto theme, density, navigation style.
   * Display name, tagline, favicon upload, custom CSS, hide "powered by".
   * All of it is applied through CSS variables, so custom CSS stays small.
 
 ### Dashboard and reports (Agent Panel → Dashboard)
-  * Key numbers (open, overdue, unassigned, created / closed, first
-    response, SLA met), ticket activity chart (line / area / bars),
+  * Key numbers (open, overdue, unassigned, created/closed, first
+    response, SLA met), ticket activity chart (line/area/bars),
     workload by department, backlog breakdown, SLA compliance, "my work",
     recent activity, integration health and the classic statistics table
     with CSV export. Widgets and chart styles are chosen per agent.
@@ -54,7 +54,7 @@ Connectors link departments to the places where work happens. Each
 connector has channels; a channel maps an external key (a Linear team, a
 Teams channel, a webhook routing key) to a department.
 
-  * **Linear** — issues created in a mapped team become tickets, comments
+  * **Linear** — issues created in a mapped team become tickets; comments
     become replies or notes, state changes close or reopen tickets, and
     ticket replies, notes, assignments and SLA alerts flow back to the
     issue. One Linear API key, as many team → department mappings as you
@@ -62,9 +62,9 @@ Teams channel, a webhook routing key) to a department.
   * **Microsoft Teams** — incoming webhooks post ticket activity and alerts
     as adaptive cards to a channel per department; an outgoing webhook lets
     people open and answer tickets by @mentioning the help desk.
-  * **Webhook / custom API** — signed JSON events (ticket.created,
-    ticket.message, ticket.response, ticket.note, ticket.closed,
-    ticket.reopened, ticket.assigned, ticket.transferred, alert) to any URL,
+  * **Webhook/custom API** — signed JSON events (ticket.created,
+    ticket.message, ticket.response, ticket.note, ticket. closed,
+    ticket.reopened, ticket.assigned, ticket. transferred, alert) to any URL,
     plus an inbound endpoint (`POST /api/connectors/<id>/webhook`) that
     creates tickets, posts replies and notes and changes status.
 
